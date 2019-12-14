@@ -7,7 +7,7 @@ def write_xml(folder, img, objects, tl, br, savedir, dirNum):
     if not os.path.isdir(savedir):
         os.mkdir(savedir)
 
-    image = cv2.imread("images/new-{}/".format(dirNum)+img)
+    image = cv2.imread("images/{}/".format(dirNum)+img)
     height, width, depth = image.shape
 
     annotation = ET.Element('annotation')
