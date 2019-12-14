@@ -76,6 +76,7 @@ if __name__ == '__main__':
         image = cv2.imread("images/{}/".format(sys.argv[1])+image_file)
         #print("image: {}".format(image))
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        plt.title(image_file)
         ax.imshow(image)
 
         toggle_selector.RS = RectangleSelector(
